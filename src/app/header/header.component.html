@@ -1,0 +1,45 @@
+<mat-toolbar color="primary" class="sticky">
+  <mat-toolbar-row fxLayoutAlign="space-between center">
+    <div fxLayout="row">
+      <button mat-button routerLink="/home" routerLinkActive="active">
+        <img src="assets/images/logo.png" height="50px" alt="">
+        <span class="logo">MyPortfolio</span>
+      </button>
+      <div *ngIf="!deviceXs" fxLayout="row">
+        <button mat-button routerLink="/home" routerLinkActive="active">
+          <mat-icon>home</mat-icon> Home
+        </button>
+        <button mat-button routerLink="/about-us" routerLinkActive="active"><span class="fa fa-info fa-lg"></span> About
+          us</button>
+        <button mat-button routerLink="/contact-us"><span class="fa fa-address-card fa-lg"></span>Contact us</button>
+      </div>
+    </div>
+    <div>
+      <div *ngIf="deviceXs">
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+      </div>
+      <div fxLayoutAlign="end" *ngIf="!deviceXs">
+        <button mat-button [routerLink]="['user/login']">
+          <mat-icon >login</mat-icon>LogIn
+        </button>
+        <button mat-button [routerLink]="['user/sign-up']"> <i class="fas fa-user-plus"></i> Sign Up </button>
+      </div>
+    </div>
+  </mat-toolbar-row>
+  <mat-toolbar-row *ngIf="deviceXs" fxLayoutAlign="space-between end">
+    <button mat-button [routerLink]="['/home']">
+      <mat-icon>home</mat-icon>Home
+    </button>
+    <button mat-button [routerLink]="['user/login']" >
+      <mat-icon >login</mat-icon>LogIn
+    </button>
+    <button mat-button [routerLink]="['user/sign-up']" > <i class="fas fa-user-plus"></i> Sign Up </button>
+  </mat-toolbar-row>
+</mat-toolbar>
+<!-- Menu Items -->
+<mat-menu #menu="matMenu" fxLayoutAlign="end">
+  <button mat-menu-item [routerLink]="['/about-us']">About Us</button>
+  <button mat-menu-item [routerLink]="['/contact-us']">Contact Us</button>
+</mat-menu>

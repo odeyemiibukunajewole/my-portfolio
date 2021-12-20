@@ -1,0 +1,48 @@
+.navbar {
+  background-color: rgb(3, 1, 1);
+}
+
+.logo {
+  padding: 0px 5px;
+  font-size: 20px;
+}
+
+.flexNav {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 0px;
+  margin-right: 500px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+/* div > button.active {
+  color: rgb(9, 56, 9);
+} */
+
+.btn-facebook {
+  color: #fff !important;
+  background-color: #3b5998 !important;
+}
+.btn-google-plus {
+  color: #fff !important;
+  background-color: #dd4b39 !important;
+}
+.btn-youtube {
+  color: #fff !important;
+  background-color: #ff4b39 !important;
+}
+.btn-linkedin {
+  color: #fff !important;
+  background-color: #007bb6 !important;
+}
+.btn-twitter {
+  color: #fff !important;
+  background-color: #55acee !important;
+}
+.btn-mail {
+  color: #fff !important;
+  background-color: #512da8 !important;
+}

@@ -1,0 +1,32 @@
+.row-header {
+  height: 100%;
+  /* background-color:secondary; */
+  text-align: center;
+}
+
+.row{
+  border: 1px solid ;
+  border-color:#5a5a5a;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.carousel {
+  background-color: #354dd1;
+  height: 250px;
+}
+
+.btn-warning {
+  background-color: #354dd1;
+  color:aliceblue
+}
+
+.img-thumbnail{
+  padding-top: 20px;
+}
+
+.carousel-caption{
+padding: 100px;
+/* text-align: center; */
+}

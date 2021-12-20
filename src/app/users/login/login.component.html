@@ -1,0 +1,17 @@
+<form novalidate>
+  <p>
+    <mat-form-field>
+      <input matInput placeholder="Username" type="text" name="username"  required>
+      <mat-error>Username is required</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Password" type="password" name="password" required>
+      <mat-error >Password is required</mat-error>
+    </mat-form-field>
+    <mat-checkbox>Remember Me</mat-checkbox>
+  </p>
+  <span class="flex-spacer"></span>
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button type="submit" mat-button class="background-primary text-floral-white"
+    [disabled]="">Login</button>
+</form>
